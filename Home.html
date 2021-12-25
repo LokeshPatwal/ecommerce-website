@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="Home.css">
+    <title>E-commerce website</title>
+    <style>
+      @media only screen and (max-width:340px) {
+
+            #logo {
+                margin: 0px;
+                width: 60%;
+            }
+
+            #logo img {
+                order: 1;
+                width: 80px;
+                margin: 0px 40px;
+            }
+
+            #Navbar {
+                width: 100vw;
+                height: 13vh;
+                flex-wrap: wrap;
+                box-shadow: none;
+            }
+
+            #Navbar ul {
+                order: 3;
+                width: 100vw;
+                height: 21px;
+                justify-content: space-around;
+                display: flex;
+            }
+
+            #Navbar ul::before {
+                content: "";
+                background-color: #282A35;
+                position: absolute;
+                height: 33%;
+                width: 100%;
+                z-index: -1;
+            }
+
+            #Navbar ul li a {
+                display: flex;
+                align-self: center;
+                color: white;
+                margin: 0px 0px;
+                font-size: 9px;
+            }
+
+            #CartSignUp {
+                order: 2;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #CartSignUp span {
+                font-size: 13px;
+                width: 40px;
+            }
+
+            #CartSignUp button {
+                font-size: 10px;
+                width: 40px;
+                height: 17px;
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            #SliderImages picture Img {
+                height: 24vh;
+            }
+
+
+            /* .........................First Part...................... */
+
+            .firstsection {
+                height: 45vh;
+                padding: 0px 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .StarLeft {
+                display: none;
+            }
+
+            .StarRight {
+                display: none;
+            }
+
+            .description h1 {
+                margin-bottom: 1rem;
+                text-align: center;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .description p {
+                padding: 0px 10px;
+                text-align: justify;
+                font-size: 14px;
+                line-height: normal;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* ..........................Second Part.......................... */
+
+            .secondsection {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .secondsection h1 {
+                text-align: center;
+                font-size: 18px;
+                margin: 50px;
+                color: #313131;
+            }
+
+            .firstline {
+                margin-bottom: 60px;
+                text-align: center;
+                display: flex;
+            }
+
+            .secondline {
+                margin-bottom: 100px;
+                text-align: center;
+                display: flex;
+            }
+
+            .categories {
+                width: 3rem;
+                margin: 0px 0px;
+                top: 0px;
+                opacity: 0.1;
+            }
+
+            .CategoryP {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="Navbar">
+
+        <div id="logo">
+            <a href="Home.html"><img src="Images/naturefood.jpg" alt="Naturefood"></a>
+        </div>
+
+        <ul>
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+        </ul>
+
+        <div id="CartSignUp">
+            <span class="fas fa-shopping-cart"></span>
+            <button>Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- .....................................Farming Images............................... -->
+
+    <section id="SliderImages">
+        <picture>
+            <img src="Images/Farming.jpg" alt="Farming" class="slideImgs">
+            <img src="Images/Organicfruits.jpg" alt="OrganicFruits" class="slideImgs">
+            <img src="Images/Sadhguru.jpg" alt="Sadhguru" class="slideImgs">
+            <img src="Images/Farming.jpg" alt="Farming" class="slideImgs">
+        </picture>
+    </section>
+
+    <!-- .............................First Part............................. -->
+
+    <section class="firstsection">
+        <img src="Images/Star1.jpg" alt="spice1" class="StarLeft">
+        <div class="description">
+            <h1>Nature Food- Way to live a healthy life</h1>
+            <p>'Nature Food' has grown on the principles of health, ecology, and care.
+                We believe in working with a large number of accredited farmers who do not use or promote the use
+                of pesticides & genetically modified seeds to grow their produce.We aim to give our customers
+                a healthy chemical-free meal for the perfect nutrition.</p>
+        </div>
+        <img src="Images/Star2.jpg" alt="spice2" class="StarRight">
+    </section>
+
+    <!-- .................................Second Part.............................. -->
+
+    <section class="secondsection">
+        <h1>Our Organic Range</h1>
+        <div class="firstline">
+            <div>
+                <a href="Products.html"><img src="Images/flours.png" class="categories" alt="flours"></a>
+                <p class="CategoryP">Flours</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/whole spices.png" class="categories" alt="whole species"></a>
+                <p class="CategoryP">Whole spices</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/Ground spices.png" class="categories" alt="Ground species"></a>
+                <p class="CategoryP">Ground spices</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/sugar & jaggery.png" class="categories"
+                        alt="sugar & jaggery"></a>
+                <p class="CategoryP">Sugar & Jaggery</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/Tea & coffee.png" class="categories" alt="tea & coffee"></a>
+                <p class="CategoryP">Tea & Coffee</p>
+            </div>
+        </div>
+        <div class="secondline">
+            <div>
+                <a href="Products.html"><img src="Images/grains.png" class="categories" alt="masala blends"></a>
+                <p class="CategoryP">Cereals & Grains</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/Oils , honey & pastels.png" class="categories"
+                        alt="oils, honey & pastels"></a>
+                <p class="CategoryP">Oils & Honey</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/rice.png" class="categories" alt="rice"></a>
+                <p class="CategoryP">Rice</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/pulses.png" class="categories" alt="pulses"></a>
+                <p class="CategoryP">Pulses</p>
+            </div>
+            <div>
+                <a href="Products.html"><img src="Images/Dry fruits.png" class="categories" alt="dry fruits"></a>
+                <p class="CategoryP">Dry Fruits</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- .............................Third Part............................ -->
+
+    <section class="thirdsection">
+        <h1>Why to Choose Organic</h1>
+        <div class="whyorganic">
+            <div class="NoChemicals">
+                <img src="Images/Nutritional value.png" alt="nutritional value">
+                <h3>Nutritional value</h3>
+                <p>Organic foods contains far more natural mineral & vitamins</p>
+            </div>
+            <div class="NoChemicals">
+                <img src="Images/No chemicals.png" alt="no chemicals">
+                <h3>No Chemical & Pesticides</h3>
+                <p>No artificial fertilizers & additives are needed for crops to grow</p>
+            </div>
+            <div class="NoChemicals">
+                <img src="Images/Preserve environment.png" alt="preserve environment">
+                <h3>Preserves the Environment</h3>
+                <p>Organic farming ensures soil fertility and creates sustainable environment for all </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ...........................................Footer.............................................. -->
+
+    <footer>
+        <div id="firstfooter">
+            <div class="footer1 footer">
+                <h4>All Range :-</h4>
+                <p><a href="#">Organic Rice</a> | <a href="#">Organic Cereals & Grains</a> | <a href="#">Organic
+                        Flours</a> | <a href="#">Organic Pulses</a> | <a href="#">Organic Sugar & Jaggery</a> | <a
+                        href="#">Organic
+                        Whole
+                        Spices</a> | <a href="#">Organic Tea & Coffee</a> |
+                    <a href="#">Organic Ground Spices</a> | <a href="#">Organic Dry Fruits</a> | <a href="#">Organic
+                        Oils &
+                        Honey</a>
+                </p>
+            </div>
+
+            <div class="footerdown">
+
+                <div class="footer2 footer">
+                    <h3>Get In Touch</h3>
+                    <p>Nature Food Private Ltd.<br> D-14, Sector 11, Gurugram, Bharat<br><br>
+                        <a href="#">Customercare@Naturefood.com</a><br> Call - 9811231458
+                    </p>
+                </div>
+
+                <div class="footer3 footer">
+                    <h3>Quick Links</h3>
+                    <li><a href=#>Home</a></li>
+                    <li><a href=#>About Us</a></li>
+                    <li><a href=#>Products</a></li>
+                    <li><a href=#>Services</a></li>
+                    <li><a href=#>Contact Us</a></li>
+                </div>
+
+                <div class="footer4 footer">
+                    <h3>Useful Links</h3>
+                    <li><a href=#>Privacy</a></li>
+                    <li><a href=#>Terms & Conditions</a></li>
+                    <li><a href=#>Shipping Policy</a></li>
+                    <li><a href=#>Order Tracking</a></li>
+                    <li><a href=#>Returns & Refunds</a></li>
+                </div>
+            </div>
+        </div>
+        <div id="secondfooter">
+            <p>© Copyright 2021 - Nature Food. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
