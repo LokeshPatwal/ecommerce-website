@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ......................................Navigation Bar....................................... */
+
+.active {
+    background-color: #4CAF50;
+    color:white !important;
+}
+
+#Navbar {
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    position: sticky;
+    box-shadow: 0px 1px 5px 0px #c1c1c1;
+}
+
+#Navbar ul {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#logo {
+    margin: 0px 50px;
+}
+
+#logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Navbar ul li {
+    list-style-type: none;
+}
+
+#Navbar ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    padding: 5px;
+    margin: 0px 23px;
+    text-decoration: none;
+}
+
+#Navbar ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#Navbar ul li a:active {
+    background-color: darkgreen;
+}
+
+.cart {
+    text-align: center;
+    width: 80px;
+    margin-left: 200px;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.signup button {
+    width: 70px;
+    height: 28px;
+    cursor: pointer;
+    border: 1px solid #4caf50;
+    background-color: white;
+    color: #4caf50;
+    font-size: 15px;
+}
+
+.signup button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+.signup button:active {
+    background-color: #389b3c;
+}
+
+
+/* .........................................ProductTitle........................................... */
+
+#productTitle {
+    background-color:darkgreen;
+    padding:30px 50px;
+    font-family:'Ubuntu' , sans-serif;
+    color:white;
+}
+
+
+/* ........................................ProductCategoryImages........................................... */
+
+#CategoryBox {
+    padding: 70px;
+}
+
+#CategoryBox a {
+    margin: 0px 5px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.CategoryBoxFlex {
+    display: flex;
+}
+
+.Category {
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.Category:hover {
+    box-shadow: 3px 3px 8px 2px #f1f1f1, -3px -3px 8px 2px #f1f1f1;
+}
+
+.ProductImage {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.CategoryName {
+    text-align: center;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* ........................................footer................................................ */
+
+#firstfooter {
+    padding: 50px 80px;
+    background-color: rgb(31, 30, 30);
+}
+
+.footerdown {
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer {
+    font-family: 'Merriweather', serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: white;
+}
+
+.footer h3 {
+    font-family: Ubuntu, sans-serif;
+    padding: 10px 0px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ec9600;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer3 {
+    margin: 0px 12rem;
+}
+
+#secondfooter {
+    padding: 16px;
+    text-align: center;
+    color: white;
+    background-color: #4a4a4b;
+}

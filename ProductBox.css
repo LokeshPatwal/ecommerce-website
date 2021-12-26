@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ......................................Navigation Bar....................................... */
+
+.active {
+    background-color: #4CAF50;
+    color:white !important;
+}
+
+#Navbar {
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    position: sticky;
+    box-shadow: 0px 1px 5px 0px #c1c1c1;
+}
+
+#Navbar ul {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#logo {
+    margin: 0px 50px;
+}
+
+#logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Navbar ul li {
+    list-style-type: none;
+}
+
+#Navbar ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    padding: 5px;
+    margin: 0px 23px;
+    text-decoration: none;
+}
+
+#Navbar ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#Navbar ul li a:active {
+    background-color: darkgreen;
+}
+
+.cart {
+    text-align: center;
+    width: 80px;
+    margin-left: 200px;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.signup button {
+    width: 70px;
+    height: 28px;
+    cursor: pointer;
+    border: 1px solid #4caf50;
+    background-color: white;
+    color: #4caf50;
+    font-size: 15px;
+}
+
+.signup button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+.signup button:active {
+    background-color: #389b3c;
+}
+
+/* .................................................ProductBoxTitle................................................ */
+
+#ProductBoxtitle {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: #626262;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+/* ...................................................ProductImages.............................................. */
+
+#ProductBox {
+    padding: 50px 90px;
+    display: inline-block;
+}
+
+.ProductDiv {
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0px 5px;
+}
+
+.ProductRows {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.ProductImage {
+    border-radius: 5px;
+}
+
+.ProductName {
+    font-family: 'MuseoSans', sans-serif;
+    margin: 10px 2px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #383838;
+    text-align: left;
+}
+
+.ProductPrice {
+    display: inline-block;
+    width: 45%;
+    margin: 0px 2px;
+    margin-top: 8px;
+    font-weight: 600;
+    font-family: 'MuseoSans', sans-serif;
+    color: brown;
+}
+
+.button {
+    background-color: #fba817;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 33px;
+    width: 45%;
+    cursor: pointer;
+    margin: 0px 8px;
+    margin-top: 8px;
+}
+
+.button:hover {
+    background-color: #f3a217;
+}
+
+.button:active {
+    background-color: #f1bc5f;
+}
