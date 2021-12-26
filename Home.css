@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ......................................Navigation Bar....................................... */
+
+/* .active {
+    background-color: #4CAF50;
+    color: white !important;
+} */
+
+#Navbar {
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    position: sticky;
+    box-shadow: 0px 1px 5px 0px #c1c1c1;
+}
+
+#Navbar ul {
+    order: 2;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#logo {
+    order: 1;
+    margin: 0px 50px;
+}
+
+#logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Navbar ul li {
+    list-style-type: none;
+}
+
+#Navbar ul li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 5px;
+    margin: 0px 23px;
+    text-decoration: none;
+}
+
+#Navbar ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#Navbar ul li a:active {
+    background-color: darkgreen;
+}
+
+#CartSignUp {
+    order: 3;
+    width: 16%;
+    display: flex;
+    align-items: center;
+}
+
+#CartSignUp span {
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+
+#CartSignUp button {
+    background-color: antiquewhite;
+    width: 70px;
+    height: 28px;
+    cursor: pointer;
+    border: 1px solid #4caf50;
+    background-color: white;
+    color: #4caf50;
+    font-size: 15px;
+}
+
+#CartSignUp button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+#CartSignUp button:active {
+    background-color: #389b3c;
+}
+
+/* ..................................Farming Images............................. */
+
+#SliderImages {
+    overflow: hidden;
+}
+
+#SliderImages picture {
+    position: relative;
+    display: flex;
+    animation: 20s slider infinite;
+}
+
+#SliderImages picture Img {
+    width: 100% !important;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    34% {
+        left: 0;
+    }
+    39% {
+        left: -100%;
+    }
+    64% {
+        left: -100%;
+    }
+    69% {
+        left: -200%;
+    }
+    94.5% {
+        left: -200%;
+    }
+    100% {
+        left: -300%;
+    }
+}
+
+/* .........................First Part...................... */
+
+.firstsection{
+    height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.StarLeft{
+    align-self:flex-start;
+}
+.StarRight{
+    align-self:flex-end;
+}
+.description h1 {
+    margin-bottom:3rem;
+    text-align: center;
+    color: #313131;
+}
+
+.description p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ..........................Second Part.......................... */
+
+.secondsection {
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.secondsection h1 {
+    text-align: center;
+    margin: 50px;
+    color: #313131;
+}
+
+.firstline {
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+}
+
+.secondline {
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+}
+
+.categories {
+    position: relative;
+    margin: 0px 84px;
+    top: 100px;
+    opacity: 0.1;
+    animation-name: move;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        top: 100px;
+        opacity: 0.1;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+/* ...........................Third Part............................. */
+
+.thirdsection {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.thirdsection h1 {
+    text-align: center;
+    margin: 60px;
+    color: #313131;
+}
+
+.whyorganic {
+    margin: 100px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.NoChemicals {
+    margin: 0px 40px;
+}
+
+.NoChemicals h3 {
+    margin: 16px 0px;
+    color: #313131;
+}
+
+.NoChemicals p {
+    line-height: 1.5;
+}
+
+/* ........................................footer................................................ */
+
+#firstfooter {
+    padding: 50px 80px;
+    background-color: #12121d;
+}
+
+.footerdown {
+    display: flex;
+    margin-top: 50px;
+}
+
+.footer {
+    font-family: 'Merriweather', serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: white;
+}
+
+.footer h3 {
+    font-family: Ubuntu, sans-serif;
+    padding: 10px 0px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f1bc5f;
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer3 {
+    margin: 0px 12rem;
+}
+
+#secondfooter {
+    padding: 16px;
+    text-align: center;
+    color: white;
+    background-color: #4a4a4b;
+}
